@@ -12,6 +12,10 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
+.image {
+    border-radius: 10px;
+}
+
 /* next and previous buttons */
 .prev, .next {
   cursor: pointer;

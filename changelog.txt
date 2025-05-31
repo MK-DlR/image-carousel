@@ -1,5 +1,6 @@
 5/31/25:
 
+- Change image corners to rounded
 - Add automatic slideshow feature
 - Add basic slideshow functionality
 - Add styling
