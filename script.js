@@ -1,16 +1,43 @@
 // script.js
 
 let slideIndex = 1;
+let slideTimer;
+
+// initialize slideshow
 showSlides(slideIndex);
+startAutoSlide();
+
+// start auto slideshow
+function startAutoSlide() {
+  slideTimer = setInterval(function () {
+    slideIndex++;
+    showSlides(slideIndex);
+  }, 5000);
+}
+
+// stop auto slideshow
+function stopAutoSlide() {
+  clearInterval(slideTimer);
+}
+
+// reset auto slideshow
+function resetAutoSlide() {
+  stopAutoSlide();
+  startAutoSlide();
+}
 
 // next/previous controls
 function plusSlides(n) {
-  showSlides((slideIndex += n));
+  slideIndex += n;
+  showSlides(slideIndex);
+  resetAutoSlide();
 }
 
 // thumbnail image controls
 function currentSlide(n) {
-  showSlides((slideIndex = n));
+  slideIndex = n;
+  showSlides(slideIndex);
+  resetAutoSlide();
 }
 
 function showSlides(n) {
