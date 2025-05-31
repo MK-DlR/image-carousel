@@ -1,3 +1,7 @@
+5/31/25:
+
+- Add basic html for carousel
+
 5/30/25:
 
 - Create README, html boilerplate, and link script.js and style.css files
