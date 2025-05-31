@@ -1,5 +1,8 @@
 5/31/25:
 
+- Add basic slideshow functionality
+- Add styling
+- Add images
 - Add basic html for carousel
 
 5/30/25:
